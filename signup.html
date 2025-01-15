@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Luminary</title>
+   <link rel="stylesheet" href="signup.css">
+   <script src="signup.js"></script>
+</head>
+<body>
+    <div class="signup-container">
+        <div class="overlay"></div>
+        <div class="signup-content">
+            <h1>Sign Up</h1>
+            <form id="signupForm">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password (min 8 characters)" required>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                <p id="error" class="error-message"></p>
+                <button type="button" id="signupButton">Sign Up</button>
+            </form>
+            <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+
+ 
+</body>
+</html>

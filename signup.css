@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(240, 240, 240, 1);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-container {
+    background-image: url('luminiary.png'); /* Luminary image as panel background */
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 63, 136, 0.6); /* Dark blue overlay for contrast */
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.signup-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    width: 80%;
+}
+
+.signup-content h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.signup-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.signup-content input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+.signup-content input[type="text"],
+.signup-content input[type="email"],
+.signup-content input[type="password"] {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.signup-content button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #8ec365;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-content button:hover {
+    background-color: #6da948;
+}
+
+.signup-content .login-link {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.signup-content .login-link a {
+    color: #8ec365;
+    text-decoration: none;
+}
+
+.signup-content .login-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #ff6161;
+    font-size: 0.9rem;
+}

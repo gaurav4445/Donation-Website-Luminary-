@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Cash</title>
+  <link rel="stylesheet" href="cash.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+   <script src="cash.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Donate Cash</h1>
+        <form onsubmit="submitDonation(event)">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <div id="nameError" class="error">Name is required.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="Enter your phone number">
+                <div id="phoneError" class="error">Enter a valid 10-digit phone number.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <div id="emailError" class="error">Enter a valid email address.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Enter your address">
+                <div id="addressError" class="error">Address is required.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Donation Amount (INR)</label>
+                <input type="number" id="amount" placeholder="Enter donation amount">
+                <div id="amountError" class="error">Enter a valid amount.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="governmentId">Government ID Proof (for Tax Exemption 80G)</label>
+                <input type="file" id="governmentId" class="file-input">
+                <div id="governmentIdError" class="error">Please upload a valid government ID for tax exemption.</div>
+            </div>
+
+            <button type="submit" class="submit-btn">Donate</button>
+        </form>
+
+        <div class="payment-buttons">
+            <button type="button" class="payment-btn" onclick="generateUPIQRCode()">Generate UPI QR Code</button>
+        </div>
+
+        <div id="qrcode"></div>
+
+        <p class="form-footer">Your generosity is appreciated! Your cash donation will make a big difference in someone's life. <span>Thank you for your support!</span></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    /* Light background for the body */
+    scroll-behavior: smooth;
+    /* Enable smooth scrolling */
+}
+
+header {
+    background-color: #456a95;
+    /* Solid color for header */
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Ensure it stays above other elements */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Add a shadow for better visibility */
+}
+
+.div1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div1 ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.div1 ul li {
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.div1 ul li:hover {
+    color: #8ec365;
+}
+
+.div1 ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.btn1,
+.btn2 {
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn1 {
+    background-color: white;
+    color: black;
+}
+
+.btn1:hover {
+    background-color: #8ec365;
+    color: white;
+}
+
+.btn2 {
+    background-color: rgba(0, 63, 136, 1);
+    color: white;
+}
+
+.btn2:hover {
+    background-color: #6c50a4;
+}
+
+/* NGO Image Section */
+.ngo-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content-wrapper {
+    background-image: url('luminiary.png');
+    /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #013220;
+    /* Deep green color */
+    background-blend-mode: multiply;
+    /* Blend the image with the green background */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    /* Slight shadow for depth */
+    filter: contrast(1.2) brightness(1);
+    /* Adjust contrast and brightness */
+}
+
+.content-wrapper p {
+    font-weight: bold;
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.donate-section h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.donate-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.donate-button {
+    text-align: center;
+    width: 120px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    /* Show pointer cursor on hover */
+}
+
+.donate-button:hover {
+    transform: translateY(-5px);
+    /* Hover effect */
+}
+
+.donate-button:hover p {
+    color: #32cd32;
+    /* Lighter green on hover */
+}
+
+.donate-button img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.donate-button img:hover {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+}
+
+.donate-button p {
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: green;
+    /* Text color changed to green */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
